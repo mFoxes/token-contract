@@ -33,7 +33,7 @@ export const Mint = () => {
   return (
     <div className='mint'>
         <div className="mint__container">
-            <button onClick={handleMint}>Transfer</button>
+            <button onClick={handleMint}>Mint</button>
             <form className="mint__form">
                 <input type="text" value={addressTo} onChange={(event) => {
                     setAddressTo(event.target.value)

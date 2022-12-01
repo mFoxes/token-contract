@@ -11,7 +11,6 @@ export const Transfer = () => {
     const { generalStore } = useContext(Context);
 
 	const handleTransfer =  async () => {
-        console.log(amount * 10 ** 18);
 		await generalStore.contract.methods.transfer(addressTo, (amount * 10 ** 18).toExponential()).send({from: generalStore.account});
 	}
 
