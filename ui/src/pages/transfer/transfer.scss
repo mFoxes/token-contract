@@ -1,0 +1,28 @@
+.transfer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    &__container {
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        button {
+            padding: 10px 20px;
+            background-color: #fff;
+            max-width: 120px;
+            border-radius: 2px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+    }
+    &__form {
+        display: flex;
+        gap: 40px;
+        input {
+            padding: 10px 20px;
+            border: 1px solid #000;
+            border-radius: 2px;
+        }
+    }
+}

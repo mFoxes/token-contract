@@ -1,0 +1,18 @@
+@import "./variables.scss";
+@import "./reset.scss";
+.app {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
+[class*="__container"] {
+    max-width: $maxWidthContainer;
+    width: calc(100% - $containerPadding);
+    box-sizing: content-box;
+    padding-left: calc($containerPadding / 2);
+    padding-right: calc($containerPadding / 2);
+    margin: 0;
+}
